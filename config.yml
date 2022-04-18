@@ -133,7 +133,7 @@ currentWorld: '&7Your current world: &b%worldName%'
 helpMessage: '&7Please use:
 %n%&b/WorldManager List &7> &9List all worlds
 %n%&b/WorldManager Info <WorldName> &7> &9Display information about a world
-%n%&b/WorldManager MyWorld &9Display your current world
+%n%&b/WorldManager MyWorld &7> &9Display your current world
 %n%&b/WorldManager Load <WorldName> &7> &9Load a world
 %n%&b/WorldManager Unload <WorldName> &7> &9Unload a world
 %n%&b/WorldManager Reload &7> &9Reload the config
