@@ -1,0 +1,159 @@
+# Modify which sub-commands should be enabled
+# Enable a command by adding it to the list, disable it by removing it from the list
+# the command must be written exactly like in the list above
+
+# Available Commands:
+# list
+# info
+# myworld
+# load
+# unload
+# reload
+# teleport
+# setspawn
+# delete
+# create
+sub-commands: [list, info, myworld, load, unload, reload, teleport, setspawn, delete, create]
+
+# The default prefix used by the plugin
+prefix: '&bWorldManager &9>'
+
+# The folders which should be excluded when searching for custom worlds
+# When adding a folder to the list be sure that the name is exactly the same
+excludedSearchFolders: [plugins, logs, crash-reports]
+
+# Message when deleting while deleting a world a file could not be deleted. This will be sent in the console
+
+# %fileName% = Name of file which could not be deleted
+deletedFileError: '&cUnable to delete file: &4%fileName%'
+
+# Message when someone is not able to execute a command due to missing permissions
+noPermission: '&cYou dont have enough permissions to use this command.'
+
+# Message when someone tries to use a disabled sub-command
+commandDisabled: '&7This sub-command is currently disabled. If you want to use it please enable it using the config'
+
+# Design for loaded worlds in the list command
+
+# %world% = World name
+loadedWorldDesign: '&7%world%'
+
+# Design for unloaded worlds in list command
+
+# %world% = World name
+unloadedWorldDesign: '&c&o%world%'
+
+# Message when someone is not providing enough arguments in any command
+
+# %amount% = Amount of arguments which are required
+notEnoughArguments: '&7Please provide &b%amount% &7arguments.'
+
+# Message when the world used as argument is not loaded / does not exist
+providedWorldDoesNotExist: '&cThe provided world does not exist.'
+
+# Message when a user is being teleported out of his world because of it being unloaded by the plugin
+currentWorldUnloaded: '&7You were teleported to another world because your current world has been unloaded.'
+
+# Message when someone tries to create a world with a name that is already existing
+worldAlreadyExists: '&7This world already exists. Please use a different name.'
+
+# Message to the player which started a creation of a world
+startedCreating: '&7Started creation of your world.'
+
+# Message to the player when the creation of his world was successfully completed
+
+# %name% = Name of world which has been created
+# %time% = time that it took to create the world
+successfullyCreated: '&7Successfully created and teleported you to the world &b%name%&7 in a time of &b%time%ms&7.'
+
+# Message when using a wrong world-type in the world create command
+
+# Available WorldTypes:
+# Normal
+# Nether
+# The_End
+unknownWorldType: '&7This world type does not exist. (&bNormal, Nether, The_End&7).'
+
+# Message when using a wrong parameter in the world create command
+
+# Available parameters
+# Amplified
+# Customized
+# Flat
+# Large_Biomes
+unknownParameters: '&7This parameter does not exist (&bAmplified, Customized, Flat, Large_Biomes&7).'
+
+# Message when someone deleted a world successfully using the world delete command
+
+# %worldName% = Name of world which has been deleted
+successfullyDeleted: '&7Successfully deleted the world &b%worldName%&7.'
+
+# Message when teleporting in a world using the world teleport command
+
+# %worldName% = Name of world where he has been teleported in
+successfullyTeleported: '&7Successfully teleported you in the world &b%worldName%&7.'
+
+# Message when the config was successfully reloaded using the reload command
+configReloaded: '&7Successfully reloaded the config.'
+
+# Message when someone tries to modify a world which is not allowed to be modified
+worldNotAllowedToBeModified: '&7This world can not be modified.'
+
+# Message when a world has been successfully unloaded
+successfullyUnloadedWorld: '&7The world has been successfully unloaded'
+
+# Message when a world has been successfully loaded
+successfullyLoadedWorld: '&7The world has been successfully loaded'
+
+# Message when someone tries to load an already loaded world
+worldAlreadyLoaded: '&7This world is already loaded'
+
+# Message when someone sets the spawn of a world
+spawnChanged: '&7Successfully changed the spawn of your world to your location'
+
+# Message when someone uses the myworld command to view his current world name
+
+# %worldName% = Name of the world
+currentWorld: '&7Your current world: &b%worldName%'
+
+# Message of the help list / the message when someone uses only /WorldManager with no arguments given
+
+# Available Commands:
+# List
+# Info <World>
+# MyWorld
+# Load <World>
+# Unload <World>
+# Reload
+# Teleport <World>
+# SetSpawn
+# Delete <World>
+# Create <World> (Parameters)
+# %n% = New Line
+helpMessage: '&7Please use:
+%n%&b/WorldManager List &7> &9List all worlds
+%n%&b/WorldManager Info <WorldName> &7> &9Display information about a world
+%n%&b/WorldManager MyWorld &9Display your current world
+%n%&b/WorldManager Load <WorldName> &7> &9Load a world
+%n%&b/WorldManager Unload <WorldName> &7> &9Unload a world
+%n%&b/WorldManager Reload &7> &9Reload the config
+%n%&b/WorldManager Teleport <WorldName> &7> &9Teleport into a world
+%n%&b/WorldManager SetSpawn &7> &9Set the spawn of your world to your current location
+%n%&b/WorldManager Delete <WorldName> &7> &9Delete a world
+%n%&b/WorldManager Create <WorldName> <Type> (GenerationParameters) &7> &9Create a world'
+
+# Message when using the world info command
+
+# %n% = New Line
+# %name% = WorldName
+# %playerCount% = Amount of players in world
+# %seed% = The seed of the world
+# %uuid% = UUID of the world
+# %maxHeight% = Max height of the world
+# %entities% = Entity count of the world
+worldInformation: '&7Information about &b%name%
+%n%&7Players: &b%playerCount%
+%n%&7Seed: &b%seed%
+%n%&7UUID: &b%uuid%
+%n%&7MaxHeight: &b%maxHeight%
+%n%&7Entities: &b%entities%'

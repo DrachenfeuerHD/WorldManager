@@ -1,0 +1,61 @@
+name: WorldManager
+main: main.Main
+version: 1.2
+author: DontBlameMe
+description: WorldManager plugin by DontBlameMe
+
+commands:
+  worldmanager:
+    aliases: [wm, worldm, manager, worldcreator]
+    description: Modify the worlds
+    permission: worldmanager
+
+permissions:
+  worldmanager:
+    description: Allows the player to use the worldmanager command.
+    default: op
+  worldmanager.teleport:
+    description: Allows the player to teleport to worlds.
+    default: op
+  worldmanager.reload:
+    description: Allows the player to reload the config.
+    default: op
+  worldmanager.list:
+    description: Allows the player to list all worlds.
+    default: op
+  worldmanager.load:
+    description: Allows the player to load worlds.
+    default: op
+  worldmanager.unload:
+    description: Allows the player to unload worlds.
+    default: op
+  worldmanager.setspawn:
+    description: Allows the player to set the current world spawn.
+    default: op
+  worldmanager.info:
+    description: Allows the player to view information about a world.
+    default: op
+  worldmanager.myworld:
+    description: Allows the player to view in which world they currently are.
+    default: op
+  worldmanager.create:
+    description: Allows the player to create worlds.
+    default: op
+  worldmanager.delete:
+    description: Allows the player to delete worlds.
+    default: op
+  worldmanager.*:
+    description: Gives someone every permission.
+    default: op
+    children:
+      worldmanager: true
+      worldmanager.delete: true
+      worldmanager.create: true
+      worldmanager.info: true
+      worldmanager.setspawn: true
+      worldmanager.unload: true
+      worldmanager.load: true
+      worldmanager.list: true
+      worldmanager.reload: true
+      worldmanager.teleport: true
+      worldmanager.myworld: true
