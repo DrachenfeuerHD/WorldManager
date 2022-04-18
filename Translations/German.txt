@@ -16,7 +16,7 @@
 sub-commands: [list, info, myworld, load, unload, reload, teleport, setspawn, delete, create]
 
 # The default prefix used by the plugin
-prefix: '&bWorldManager &9>'
+prefix: '&bWeltenManager &9>'
 
 # The folders which should be excluded when searching for custom worlds
 # When adding a folder to the list be sure that the name is exactly the same
