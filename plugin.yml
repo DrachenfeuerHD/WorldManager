@@ -11,9 +11,6 @@ commands:
     permission: worldmanager
 
 permissions:
-  worldmanager:
-    description: Allows the player to use the worldmanager command.
-    default: op
   worldmanager.teleport:
     description: Allows the player to teleport to worlds.
     default: op
@@ -48,7 +45,6 @@ permissions:
     description: Gives someone every permission.
     default: op
     children:
-      worldmanager: true
       worldmanager.delete: true
       worldmanager.create: true
       worldmanager.info: true
