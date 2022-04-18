@@ -45,13 +45,13 @@ permissions:
     description: Gives someone every permission.
     default: op
     children:
-      worldmanager.delete: true
-      worldmanager.create: true
-      worldmanager.info: true
-      worldmanager.setspawn: true
-      worldmanager.unload: true
-      worldmanager.load: true
-      worldmanager.list: true
-      worldmanager.reload: true
       worldmanager.teleport: true
+      worldmanager.reload: true
+      worldmanager.list: true
+      worldmanager.load: true
+      worldmanager.unload: true
+      worldmanager.setspawn: true
+      worldmanager.info: true
       worldmanager.myworld: true
+      worldmanager.create: true
+      worldmanager.delete: true
