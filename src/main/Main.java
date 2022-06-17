@@ -15,11 +15,9 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
         instance = this;
 
         ConfigUtils.createCustomConfig();
-
         getCommand("WorldManager").setExecutor(new WorldManager());
 
         List<String> worldFolders = new ArrayList<>();
@@ -33,7 +31,6 @@ public class Main extends JavaPlugin {
             getServer().createWorld(new WorldCreator(worldName));
 
         Bukkit.getConsoleSender().sendMessage(ConfigUtils.getValue("prefix").replace("&", "§") + " §aThe plugin has been enabled");
-
     }
 
     @Override
